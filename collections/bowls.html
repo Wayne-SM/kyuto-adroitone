@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bowls · Kyuto</title>
+<meta name="description" content="Bowls are launching soon at Kyuto." />
+<link rel="icon" type="image/png" href="../assets/kyuto-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,wght@0,300..1000;1,300..1000&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/styles.css?v=3" />
+</head>
+<body class="page-wrap" data-base="../" data-collection="bowls">
+
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-inner">
+    <span>Handmade with love in India&nbsp;&nbsp;·&nbsp;&nbsp;Free Shipping on orders above ₹1299&nbsp;&nbsp;·&nbsp;&nbsp;Use Code <b>KYUTD10</b> for 10% off&nbsp;&nbsp;·&nbsp;&nbsp;Easy 7-day Returns&nbsp;&nbsp;·&nbsp;&nbsp;</span><span>Handmade with love in India&nbsp;&nbsp;·&nbsp;&nbsp;Free Shipping on orders above ₹1299&nbsp;&nbsp;·&nbsp;&nbsp;Use Code <b>KYUTD10</b> for 10% off&nbsp;&nbsp;·&nbsp;&nbsp;Easy 7-day Returns&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="header-mobile-left">
+      <button class="icon-btn" id="openMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg></button>
+    </div>
+    <a class="logo" href="../index.html" aria-label="Kyuto home"><img src="../assets/kyuto-logo.png" alt="Kyuto" width="160" height="160" /></a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="../index.html#shop">Shop</a>
+      <div class="nav-item">
+        <a href="../index.html#shop" class="nav-link-drop">Collections <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="../collections/candles.html">Candles</a>
+          <a href="../collections/mugs.html">Mugs</a>
+          <a href="../collections/cup-saucer.html">Cup-Saucer Sets</a>
+          <a href="../collections/bowls.html">Bowls</a>
+        </div>
+      </div>
+      <a href="../about.html">About</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <button class="icon-btn" id="openSearch" aria-label="Search"><span class="icon-inner"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span></button>
+      <button class="icon-btn" id="openWishlist" aria-label="Wishlist"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg><span class="badge" id="wishlistBadge" hidden>0</span></button>
+      <button class="icon-btn" id="openCart" aria-label="Cart"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg><span class="badge" id="cartBadge" hidden>0</span></button>
+      <button class="icon-btn" id="openAccount" aria-label="Account"><span class="icon-inner"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <img src="../assets/kyuto-logo.png" alt="Kyuto" width="120" height="120" />
+    <button class="icon-btn" id="closeMenu" aria-label="Close menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+  </div>
+  <nav class="drawer-nav" aria-label="Mobile">
+    <a href="../index.html#shop">Shop</a>
+    <p class="drawer-label">Collections</p>
+    <a class="drawer-sub" href="../collections/candles.html">Candles</a>
+    <a class="drawer-sub" href="../collections/mugs.html">Mugs</a>
+    <a class="drawer-sub" href="../collections/cup-saucer.html">Cup-Saucer Sets</a>
+    <a class="drawer-sub" href="../collections/bowls.html">Bowls</a>
+    <a href="../about.html">About</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../index.html#gifting">Corporate Gifting</a>
+  </nav>
+  <p class="drawer-foot">Where Art Meets Aroma · India</p>
+</aside>
+
+<main>
+<section class="launching">
+  <p class="hand hand-pink">launching soon âœ¨</p>
+  <h1 class="launching-title">Bowls</h1>
+  <p class="launching-sub">Something beautiful is on its way. Stay tuned!</p>
+  <a class="mini-btn" href="../index.html">Back to Home</a>
+</section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/kyuto-logo.png" alt="Kyuto" width="160" height="160" loading="lazy" class="footer-logo" />
+        <p class="hand hand-pink">Where Art Meets Aroma</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/kyuto.aesthetics" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="mailto:kyuto.asthetics@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></a>
+        </div>
+      </div>
+      <nav aria-label="Quick links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html#shop">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="#" data-soon="FAQ is coming soon">FAQ</a></li>
+          <li><a href="../index.html#gifting">Corporate Gifting</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="#" data-soon="Account sign-in is not part of this demo">My Account</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Policies">
+        <h4 class="footer-heading">Policies</h4>
+        <ul class="footer-links">
+          <li><a href="#" data-soon="Shipping policy coming soon">Shipping Policy</a></li>
+          <li><a href="#" data-soon="Returns policy coming soon">Returns Policy</a></li>
+          <li><a href="#" data-soon="Privacy policy coming soon">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4 class="footer-heading">Join Kyuto Family</h4>
+        <p class="footer-note">Get 10% off on your first order.</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" id="newsletterEmail" required placeholder="you@example.com" aria-label="Email for newsletter" />
+          <button type="submit" class="btn btn-gradient btn-block">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>© 2026 Kyuto. All rights reserved.</p>
+      <p class="hand hand-white">Crafted with love in India.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="drawer-backdrop" id="cartBackdrop" hidden></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+  <div class="cart-head">
+    <h3>Your Cart</h3>
+    <button class="icon-btn" id="closeCart" aria-label="Close cart"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-foot">
+    <div class="cart-row"><span>Subtotal</span><strong id="cartTotal">â‚¹0</strong></div>
+    <p class="cart-hint">Shipping calculated at checkout · Free above ₹1299</p>
+    <button class="btn btn-gradient btn-block btn-lg" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-panel">
+    <form class="search-form" id="searchForm" role="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+      <input type="search" id="searchInput" placeholder="Search mugs, candles, bowls" autocomplete="off" aria-label="Search products" />
+      <button type="button" class="icon-btn" id="closeSearch" aria-label="Close search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<div class="popup-backdrop" id="welcomePopup" hidden>
+  <div class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <button class="popup-close" id="popupClose" aria-label="Close"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    <img src="../assets/kyuto-logo.png" alt="Kyuto" width="88" height="88" class="popup-logo" />
+    <h3 class="popup-title" id="popupTitle">Welcome to the world of Kyuto!</h3>
+    <p class="popup-sub">Enjoy 10% off your first order with code:</p>
+    <button class="popup-code" id="copyCode" title="Click to copy">WELCOME10</button>
+    <button class="btn btn-gradient btn-block btn-lg" id="claimBtn">Claim &amp; Shop Now</button>
+    <button class="popup-later" id="maybeLater">Maybe later</button>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/919370899377?text=Hi%20Kyuto!" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.06 0C5.5 0 .18 5.32.18 11.88c0 2.1.55 4.14 1.6 5.94L.06 24l6.4-1.68a11.9 11.9 0 0 0 5.6 1.43h.01c6.55 0 11.88-5.32 11.88-11.88 0-3.17-1.24-6.15-3.43-8.39ZM12.07 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.8 9.8 0 0 1-1.5-5.28c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.98c0 5.46-4.44 9.91-9.9 9.91Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.67-2.08c-.17-.3 0-.46.14-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37 0-.52-.05-.15-.67-1.6-.91-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5s1.07 2.9 1.23 3.1c.15.2 2.1 3.2 5.1 4.5.71.31 1.27.5 1.71.64.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+</a>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../assets/catalog.js?v=3"></script>
+<script src="../assets/app.js?v=3"></script>
+</body>
+</html>

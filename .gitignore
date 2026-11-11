@@ -1,0 +1,6 @@
+# Private — contains credentials/local state
+*.log
+.server-*
+node_modules/
+.DS_Store
+Thumbs.db
